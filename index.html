@@ -1,0 +1,344 @@
+<html>
+<head>
+    <title>Highline Solutions</title>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="images/logo-no-text.png"/>
+    <link rel="stylesheet" href="css/highline.css" media="screen">
+    <link rel="stylesheet" href="css/people.css" media="screen">
+    <link rel="stylesheet" href="css/testimonial-slideshow.css" media="screen">
+    <link rel="stylesheet" href="css/logo-slideshow.css" media="screen">
+    <script src="js/text-typer.js"></script>
+    <script src="js/slideshow.js"></script>
+    <script src="js/people.js"></script>
+</head>
+<body>
+
+<!-- <script src="flickity.min.js"></script> -->
+<div class="top-nav-outer">
+    <div class="top-nav">
+        <a href="index.html"><img src="images/logo.png" class="logo"></a>
+        <ul class="top-nav-menu mobile-hide">
+            <li class="top-nav-menu-item"><a href="index.html#services">What we do</a></li>
+            <li class="top-nav-menu-item"><a href="index.html#people">Who we are</a></li>
+            <li class="top-nav-menu-item"><a href="https://highlinecodingacademy.io">Coding Academy</a></li>
+        </ul>
+    </div>
+</div>
+<div class="white-shell">
+    <br clear="all"/>
+    <div class="tagline-outer-outer">
+        <div class="tagline-outer">
+            <div class="tagline-inner typewrite" data-period="2000"
+                 data-type='[
+                    "Custom SOFTWARE DEVELOPMENT on time and on budget",
+                    "Pragmatic BUILDERS who do it right the first time",
+                    "Map a route from your idea to an MVP",
+                    "An EXPERIENCED GUIDE to help you reach the summit",
+                    "Build your project from the right FOUNDATION",
+                    "Trusted PERSPECTIVE on your software architecture",
+                    "Build software right, but also build the RIGHT SOFTWARE" ]'>
+                <span class="wrap"></span>
+            </div>
+        </div>
+    </div>
+    <a name="services"></a>
+    <div class="services-outer">
+        <div class="services-inner">
+            <div class="services-block">
+                <h1>
+                    <i class="fa fa-assistive-listening-systems"></i>
+                    Free Assessment
+                </h1>
+                <p>
+                    Scope out a potential project or talk through a hard technical problem
+                </p>
+            </div>
+            <div class="services-block">
+                <h1>
+                    <i class="fa fa-wrench"></i>
+                    Full-stack Development
+                </h1>
+                <p>
+                    Build out your application on time and on budget
+                </p>
+            </div>
+            <div class="services-block">
+                <h1>
+                    <i class="fa fa-cubes"></i>
+                    App modernization
+                </h1>
+                <p>
+                    Rebuild a legacy system on a modern and supportable platform
+                </p>
+            </div>
+
+            <div class="services-block">
+                <h1>
+                    <i class="fa fa-map"></i>
+                    Feasibility
+                </h1>
+                <p>
+                    Map a route from your idea to an MVP - estimate effort and identify risks
+                </p>
+            </div>
+            <div class="services-block">
+                <h1>
+                    <i class="fa fa-database"></i>
+                    Architecture Assessment
+                </h1>
+                <p>
+                    Understand your current system and your options for the future
+                </p>
+            </div>
+            <div class="services-block">
+                <h1>
+                    <i class="fa fa-eye"></i>
+                    Technical Oversight
+                </h1>
+                <p>
+                    Get an experienced and objective view of your software development effort
+                </p>
+            </div>
+
+
+        </div>
+    </div>
+    <a name="expertise"></a>
+    <div class="expertise-outer">
+        <div class="expertise-inner">
+            <p class="expertise-text">
+            <div class="expertise-prompt"><span id="expertise-cursor">></span> whois highline</div>
+            <div class="expertise-type">
+                <span class="expertise-type-title">projects: </span>custom applications, legacy modernization, dashboards,
+                apis, integrations
+            </div>
+            <div class="expertise-type">
+                <span class="expertise-type-title">platforms: </span>web, mobile, voice, desktop
+            </div>
+            <div class="expertise-type">
+                <span class="expertise-type-title">industries: </span>retail, health care, education, manufacturing,
+                advertising
+            </div>
+            <div class="expertise-type">
+                <span class="expertise-type-title">tech: </span>python, java, javascript/typescript, kotlin,
+                react, angular, flutter, aws, github, kubernetes, spring boot, expressjs
+            </div>
+            <div class="expertise-type">
+                <span class="expertise-type-title">approach: </span> agile, lean, user-centered, human-centered
+            </div>
+        </div>
+    </div>
+    <div class="section clients">
+        <h2 class="section-header" style="display: none">
+            Some of our clients
+        </h2>
+        <div class="logos">
+            <div class="logos-slide">
+                <img src="images/logos/plated-foodservice.svg"/>
+                <!--<img src="images/logos/noctrix.jpeg"/>-->
+                <img src="images/logos/sheetz-2.avif.html"/>
+                <img src="images/logos/adimpact.svg"/>
+                <img src="images/logos/pts.avif.html"/>
+                <img src="images/logos/carnegie-mellon.jpg"/>
+                <img src="images/logos/pdmi.svg"/>
+                <img src="images/logos/lastwall.png"/>
+                <img src="images/logos/aek.jpg"/>
+                <img src="images/logos/littlelois.png"/>
+                <img src="images/logos/techrez2.png"/>
+                <img src="images/logos/stavvy.webp"/>
+                <img src="images/logos/sdlc-partners.png"/>
+            </div>
+        </div>
+
+        <script>
+            var copy = document.querySelector(".logos-slide").cloneNode(true);
+            document.querySelector(".logos").appendChild(copy);
+        </script>
+    </div>
+<div class="section testimonials">
+        <div class="section-header-container">
+            <h2 class="section-header">
+                Building together
+            </h2>
+        </div>
+        <div class="swipeable-carousel-container">
+            <div class="swipe-left-button" onClick="testimonialSwipeLeft(); resetCarouselTimer();"><img class="carousel-arrow-button" src="images/icons/right_chevron.svg"/></div>
+
+            <div class="carousel-and-buttons">
+                <div id="testimonial-carousel" class="swipeable-carousel">
+
+                    <div class="swipeable-item">
+                        <div class="swipeable-content testimonial">
+                            <img src="images/people/rachel-alden.jpeg" class="pic"/>
+                            <div class="author">
+                                Rachel Alden - Director of Consumer Digital, Sheetz
+                            </div>
+                            <div>
+                                "Highline Solutions has become an essential extension of our team. We rely on them to help us
+                                solve
+                                problems and bring our vision to life. They are fanatically focused on customer service. Their
+                                crazy-smart professionals have worked with us to launch some of our company's most used
+                                applications."
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swipeable-item">
+                        <div class="swipeable-content testimonial">
+                            <img src="images/people/nick-griffiths.jpeg" class="pic"/>
+                            <div class="author">
+                                Nick Griffiths - Controller, Phillips Tank & Structure
+                            </div>
+                            <div>
+                                "Highline Solutions delivered a digital timesheet and reporting application for our company, and we couldn’t be happier with the results.
+                                The new tool has transformed how we process payroll.
+                                What previously took hours of manual effort is now completed with zero data entry — and with greater reliability.
+                                <!--
+                                <br/>
+                                <br/>
+                                Communication with the Highline team was outstanding throughout the entire process. Every request we made, from small interface tweaks to complex logic, was handled quickly and professionally.
+                                They built us exactly what we needed where we could not find an out of the box solution that would fit our very unique needs of in payroll tracking as a national construction company. I highly recommend them to anyone looking for quality development work, thoughtful design, and solutions truly tailored to your specific needs.
+                                -->
+                                "
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swipeable-item">
+                        <div class="swipeable-content testimonial">
+                            <img src="images/people/jeanine.jpeg" class="pic"/>
+                            <div class="author">
+                                Jeannine Sivvy - Director of Product Management, SDLC Partners
+                            </div>
+                            <div>
+                                "Highline is collaborative, practical and experienced. They are mindful of the need for speed,
+                                with
+                                attention to design elegance and scalability. They are my trusted, go-to architects."
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swipeable-item">
+                        <div class="swipeable-content testimonial">
+                            <img src="images/people/owen.jpeg" class="pic"/>
+                            <div class="author">
+                                Owen Brown - Digital Services Manager, Sheetz
+                            </div>
+                            <div>
+                                "We've been partnering with Highline for 3 years and they have been an extremely strong and
+                                respected
+                                partner that has complimented our existing team in a great way. The entire Highline team
+                                routinely
+                                demonstrates that they are truly committed to our overall vision, contribute consistently to our
+                                success, have our best interests in mind, and quite simply, fit perfectly within the team."
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div id="testimonial-carousel-buttons-container" style="text-align:center"></div>
+            </div>
+
+            <div class="swipe-right-button" onClick="testimonialSwipeRight(); resetCarouselTimer();">
+                <img class="carousel-arrow-button" src="images/icons/right_chevron.svg"/>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="section whats-new">
+        <div class="section-header-container">
+            <h2 class="section-header whats-new">What's new with us</h2>
+        </div>
+        <div class="whats-new-inner">
+            <ul class="whats-new">
+
+                            <li class="whats-new-list-item">
+                    <a href="blog.php@pageId=130.html" class="whats-new-list-item">
+                        <span class="whats-new-date">December 29th 2025</span>
+                        <span class="whats-new-text">If I'm honest, from the day-to-day perspective, 2025 felt like a non-stop stream of uncertainty and challenge. </a>
+                    </a>
+                </li>
+                            <li class="whats-new-list-item">
+                    <a href="blog.php@pageId=129.html" class="whats-new-list-item">
+                        <span class="whats-new-date">November 5th 2025</span>
+                        <span class="whats-new-text">Big thanks to Handerson Gomes and everyone who came out for our AI Agents event last night. </a>
+                    </a>
+                </li>
+                            <li class="whats-new-list-item">
+                    <a href="blog.php@pageId=128.html" class="whats-new-list-item">
+                        <span class="whats-new-date">October 20th 2025</span>
+                        <span class="whats-new-text">We're super excited to welcome Ashley Doud to Highline as our newest Product Owner!</a>
+                    </a>
+                </li>
+                            <li class="whats-new-list-item">
+                    <a href="blog.php@pageId=127.html" class="whats-new-list-item">
+                        <span class="whats-new-date">October 1st 2024</span>
+                        <span class="whats-new-text">As Highline Solutions turns six, I just wanted to step back and write a bit about what we've built, our mission, and the values we've formed on our journey.</a>
+                    </a>
+                </li>
+                        </ul>
+            <img src="images/white-mountain-transition-4.png" class="whats-new-bottom-transition"/>
+        </div>
+    </div>
+
+    <a name="people"></a>
+    <div class="people-outer">
+        <div class="section-header-container">
+            <h2 class="section-header">
+                Meet our Team
+            </h2>
+        </div>
+        <div class="people-inner">
+            <div id="people-container-1"></div>
+            <!-- <div id="people-hide" class="people-load-more" style="display: none;">
+                <button onclick="hidePeople()" class="people-load-more">Fewer of us</button>
+            </div> -->
+            <div class="people-load-more">
+                <button id="show-more-people-button" class="people-load-more" onClick="showPeople()"> All of us &rarr;</button>
+            </div>
+            <div id="people-container-2" class="people-hide"></div>
+            <div class="people-load-more">
+                <button id="show-less-people-button" class="people-load-more" onClick="hidePeople()" style="display: none"> Fewer of us</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="section about">
+    <div class="section-header-container">
+        <h2 class="section-header">Our Values</h2>
+    </div>
+    <div class="beliefs">
+        <p>
+            Highline is a bit different from traditional consulting companies in terms of, well, everything - how
+            we're
+            structured, how we compensate, and what we believe. That's not to say that we're "right" and everyone
+            else
+            is "wrong" - it's all about trade-offs. At Highline, we value choice, autonomy, and freedom, but that
+            can
+            come at the expense of some other "good" things - like predictability, consistency, and structure. <a
+                href="https://www.bennorthrop.com/Essays/2024/highline.php">Read more...</a>
+        </p>
+        <p>
+            <img class="beliefs-us" src="images/highline-group.jpg"/>
+        </p>
+    </div>
+</div>
+<svg class="separator separator-bottom" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100"
+     preserveAspectRatio="none">
+    <path d="M0 100 C40 0 60 0 100 100 Z"></path>
+</svg>
+<div class="bottom">
+    <img src="images/logo-white.png" width="40" style="vertical-align:middle">
+    Highline
+    Solutions
+    <span class="divider">|</span>
+    Pittsburgh, PA
+    <span class="divider">|</span>
+    <a href="mailto:ben@highlinesolutions.io">ben@highlinesolutions.io</a>
+
+</div></body>
+</html>

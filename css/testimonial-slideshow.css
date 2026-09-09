@@ -1,0 +1,200 @@
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  margin: 50px auto 0 auto;
+}
+
+/* Hide the images by default */
+.testimonial {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-left: 300px;
+  margin-right: 300px;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #8caf64;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 15px 2px 0px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #8caf64;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* ------ Testimonial Carousel ------------ */
+
+.swipeable-carousel-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.swipeable-carousel {
+    margin: auto;
+    max-width: 600px;
+
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.swipeable-item {
+  flex-shrink: 0;
+  width: 100%;
+  margin-top: 50px;
+  background-color: #ccc;
+  scroll-snap-align: center;
+}
+
+.swipeable-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  font-size: 16px;
+}
+
+.carousel-and-buttons {
+  overflow: hidden;
+  padding: 2rem;
+}
+
+.carousel-arrow-button {
+  height: 60px;
+  cursor: pointer;
+}
+
+.swipe-left-button {
+  margin-left: 10px;
+
+  .carousel-arrow-button {
+    transform: scaleX(-1);
+  }
+}
+
+.swipe-right-button {
+  margin-right: 10px;
+}
+
+.swipe-left-button, .swipe-right-button {
+  filter: invert(80%) sepia(0%) saturate(2%) hue-rotate(69deg) brightness(93%) contrast(96%);
+}
+
+.swipe-left-button:hover, .swipe-right-button:hover {
+  filter: invert(65%) sepia(37%) saturate(440%) hue-rotate(46deg) brightness(94%) contrast(85%);
+}
+
+.swipe-left-button:active, .swipe-right-button:active {
+  filter: invert(54%) sepia(11%) saturate(1369%) hue-rotate(68deg) brightness(89%) contrast(86%);
+}
+
+
+@media screen and (max-width: 800px) {
+  #testimonial-carousel {
+    max-width: calc(100vw - 50px);
+    padding: 1rem;
+  }
+
+  .carousel-arrow-button {
+    height: 50px;
+  }
+
+  .testimonial {
+    padding: 30 40;
+  }
+
+  .carousel-and-buttons {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #testimonial-carousel {
+    max-width: calc(100vw - 35px);
+    padding: 0.5rem;
+  }
+
+  .carousel-arrow-button {
+    height: 35px;
+  }
+
+  .testimonial {
+    padding: 30 30;
+  }
+
+  .carousel-and-buttons {
+    padding: 0rem;
+  }
+}
