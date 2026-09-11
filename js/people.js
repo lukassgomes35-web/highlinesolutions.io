@@ -162,7 +162,7 @@ addPerson(
     'Business Consultant',
     'Product by day, runner by night (or morning)',
     'images/people/max-simons.jpg',
-    [{linkUrl: 'https://www.linkedin.com/in/maxbsimons/'}]
+    [{linkUrl: 'https://www.linkedin.com/in/maxbsimons/', iconSrc: 'images/icons/linkedin.png'}]
 )
 
 addPerson(
@@ -186,7 +186,7 @@ addPerson(
     'Full-stack Engineer',
     'Coder, Problem-solver, digging into the weeds',
     'images/people/matt-arndt.jpg',
-    [{linkUrl: 'https://www.linkedin.com/in/matthew-arndt-aa3585222/'}]
+    [{linkUrl: 'https://www.linkedin.com/in/matthew-arndt-aa3585222/', iconSrc: 'images/icons/linkedin.png'}]
 
 )
 
@@ -195,7 +195,7 @@ addPerson(
     'Full-stack Engineer',
     'Polyglot programmer and lifelong learner',
     'images/people/noah-phillips.png',
-    [{linkUrl: 'https://www.linkedin.com/in/noahphillips-dev/'}]
+    [{linkUrl: 'https://www.linkedin.com/in/noahphillips-dev/', iconSrc: 'images/icons/linkedin.png'}]
 )
 
 addPerson(
